@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button} from 'react-native';
+import Header from './components/headers';
 import { Avatar } from 'react-native-elements';
 
 
@@ -7,6 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+      <Header textIwant={"hellopotato"}/>
       <Text>staph</Text>
       <Avatar
       size="large"
@@ -17,7 +19,7 @@ export default class App extends React.Component {
       <Button 
       title={"stop"} 
       onPress={()=> {console.log('ok'); }}
-      color="black">
+      color="magenta">
       </Button>
       </View>
     );
@@ -29,6 +31,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
+  },
+  bigblue: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
